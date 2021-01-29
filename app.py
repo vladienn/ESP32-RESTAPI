@@ -18,7 +18,4 @@ def home():
         data = json_data.copy()
         return jsonify(data)
 
-    
-
-
 app.run('0.0.0.0', port = 5001)
