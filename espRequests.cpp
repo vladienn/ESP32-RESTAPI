@@ -89,7 +89,7 @@ void restGET(void* par) {
 
       HTTPClient http;
 
-      http.begin("http://78.90.138.71:5001/"); //Specify the URL
+      http.begin("url"); //Specify the URL
 
       int httpCode = http.GET();                                        //Make the request
 
@@ -150,7 +150,7 @@ void restPOST(bool light_state) {
 
     HTTPClient http;
 
-    http.begin("http://78.90.138.71:5001/"); //Specify the URL
+    http.begin("url"); //Specify the URL
     http.addHeader("Content-Type", "text/plain");
 
     String text_state = "{\"light_state\":\"";
